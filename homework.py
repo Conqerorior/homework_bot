@@ -34,7 +34,7 @@ def check_tokens():
     list_token = (PRACTICUM_TOKEN, TELEGRAM_TOKEN, TELEGRAM_CHAT_ID)
 
     if not all(list_token):
-        logging.critical(f'Проверьте переменные окружения')
+        logging.critical('Проверьте переменные окружения')
         raise Exception('Отсутствуют переменные окружения')
 
 
